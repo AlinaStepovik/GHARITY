@@ -7,6 +7,7 @@ var merge = require('merge-stream');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 
+var imagemin = require('gulp-imagemin');
 var fontName = 'planer-icons';
 
 gulp.task('iconfont', function(){
@@ -47,6 +48,13 @@ gulp.task('sprite', function () {
     .pipe(gulp.dest('dist/sass/'));
 
     return merge(imgStream, cssStream);
+});
+
+gulp.task('imgmin', function(){
+    gulp.src('dist/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('app/img'));
+
 });
 
 gulp.task('watch', ['sass'], function(){
