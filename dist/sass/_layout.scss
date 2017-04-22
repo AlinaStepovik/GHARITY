@@ -40,7 +40,7 @@ header{
   .inner-title{
     width: 100%;
     text-align: center;
-    padding-top: 19.5vh;
+    padding: 19.5vh 0 18vh 0;
     @media (max-width:767px){
       padding-top: 8.5vh;
     }
@@ -74,7 +74,7 @@ header{
 }
 
 .standard-section{
-  padding: 104px 0 96px 0;
+  padding: 104px 0 118px 0;
   @media (max-width:767px){
     padding: 56px 0 56px 0;
   }
@@ -177,15 +177,23 @@ header{
   &.white-text-color{
     color: #fff;
   }
-  .section-w-bg-text{
-    padding: 17vh 14vh 0 5vh;
-    h3{
-      padding-bottom: 3.6vh;
-      font-weight: bold;
-    }
-    p{
-      line-height: 1.57;
-      margin-bottom: 36px;
+  .color{
+    .row{
+      margin-right: 0 !important;
+      .section-w-bg-text{
+        padding: 17vh 14vh 0 0;
+        @media (max-width: 767px) {
+         padding: 17vh 14vh 0 5vh;
+        }
+        h3{
+          padding-bottom: 3.6vh;
+          font-weight: bold;
+        }
+        p{
+          line-height: 1.57;
+          margin-bottom: 36px;
+        }
+      }
     }
   }
 }
@@ -277,6 +285,7 @@ header{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 8vh;
   .donor-item{
     margin-right: 4vh;
     @media (max-width: 767px) {

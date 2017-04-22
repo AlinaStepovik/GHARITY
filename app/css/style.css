@@ -5751,6 +5751,7 @@ button.close {
     color: #150c31;
     font-weight: bold;
     padding-bottom: 3vh;
+    padding-top: 2.3vh;
     font-size: 28px; }
   .carousel-caption p {
     padding-bottom: 4vh; }
@@ -6146,7 +6147,7 @@ header {
   .inner .inner-title {
     width: 100%;
     text-align: center;
-    padding-top: 19.5vh; }
+    padding: 19.5vh 0 18vh 0; }
     @media (max-width: 767px) {
       .inner .inner-title {
         padding-top: 8.5vh; } }
@@ -6172,7 +6173,7 @@ header {
       line-height: 1.8; }
 
 .standard-section {
-  padding: 104px 0 96px 0; }
+  padding: 104px 0 118px 0; }
   @media (max-width: 767px) {
     .standard-section {
       padding: 56px 0 56px 0; } }
@@ -6276,14 +6277,19 @@ header {
     background: url("../img/our-history-bg.jpg") no-repeat top center/cover; }
   .section-w-bg.white-text-color {
     color: #fff; }
-  .section-w-bg .section-w-bg-text {
-    padding: 17vh 14vh 0 5vh; }
-    .section-w-bg .section-w-bg-text h3 {
-      padding-bottom: 3.6vh;
-      font-weight: bold; }
-    .section-w-bg .section-w-bg-text p {
-      line-height: 1.57;
-      margin-bottom: 36px; }
+  .section-w-bg .color .row {
+    margin-right: 0 !important; }
+    .section-w-bg .color .row .section-w-bg-text {
+      padding: 17vh 14vh 0 0; }
+      @media (max-width: 767px) {
+        .section-w-bg .color .row .section-w-bg-text {
+          padding: 17vh 14vh 0 5vh; } }
+      .section-w-bg .color .row .section-w-bg-text h3 {
+        padding-bottom: 3.6vh;
+        font-weight: bold; }
+      .section-w-bg .color .row .section-w-bg-text p {
+        line-height: 1.57;
+        margin-bottom: 36px; }
 
 .smart-object .event-item {
   padding-top: 53px; }
@@ -6364,7 +6370,8 @@ header {
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  padding-top: 8vh; }
   .donors-item-wrap .donor-item {
     margin-right: 4vh; }
     @media (max-width: 767px) {
